@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue-JS</title>
+</head>
+<body>
+	<div id="app">
+		<h1>{{titulo}}</h1>
+		<div v-if="usuario.id == 1">
+			Id: {{ usuario.id }},<br>
+			Nome: {{ usuario.nome }},<br>
+			Profissão: {{ usuario.profissao }},<br>
+		</div>
+		<div v-else> Nenhum usuário encontrado</div>
+	</div>
+<script src="https://unpkg.com/vue"></script>
+<script>
+	var app = new Vue({
+		el:"#app",
+		data: {
+			status: false,
+			titulo :"Vue.JS do jeito ninja!",
+			usuario: {
+				id:2,
+				nome:"Jon Snow",
+				profissao: "Autor"
+			}
+		}
+	});
+</script>
+</body>
+</html>

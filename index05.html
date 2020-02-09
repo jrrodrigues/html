@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue-JS</title>
+</head>
+<body>
+	<div id="app">
+		<h1>{{titulo}}</h1>
+		<br>
+		<img v-bind:src="imagem" v-bind:alt="texto">
+
+	</div>
+<script src="https://unpkg.com/vue"></script>
+<script>
+	var app = new Vue({
+		el:"#app",
+		data: {
+			status: false,
+			imagem : "https://i.pinimg.com/originals/de/f6/96/def69643889ee29e232637646e839064.jpg",
+			texto:"Teste de diretiva v-bind"
+		}
+	});
+</script>
+</body>
+</html>
