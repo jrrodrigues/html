@@ -6,6 +6,20 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="app">
+        <h1 v-if="status">{{titulo}}</h1>
+        Titulo: {{ titulo }}<br>		
+    </div>
     
+<script src="https://unpkg.com/vue"></script>
+<script>
+	var app = new Vue({
+		el:"#app",
+		data: {
+			status: false,
+			titulo :"TEste uso Vue.JS "
+		}
+	});
+</script>
 </body>
 </html>

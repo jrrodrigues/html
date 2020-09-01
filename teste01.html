@@ -7,10 +7,6 @@
 	<div id="app1">
 		<h1>{{titulo}}</h1>
 	</div>
-	<br>
-	<div id="app2">
-		<img v-bind:src="imagem" v-bind:alt="texto">
-	</div>
 <script src="https://unpkg.com/vue"></script>
 <script>
 	var app1 = new Vue({
@@ -18,13 +14,6 @@
 		data: {
 			status: false,
 			titulo: "Teste Vue-JS."
-		}
-	});
-	var app2 = new Vue({
-		el:"#app2",
-		data: {
-			imagem : "https://i.pinimg.com/originals/de/f6/96/def69643889ee29e232637646e839064.jpg",
-			texto:"Teste de diretiva v-bind"
 		}
 	});
 </script>
